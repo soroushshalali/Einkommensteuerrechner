@@ -30,14 +30,14 @@
             <form action="">
                 <span>!</span>
                 <label for="">Jahr:</label>
-                <select name="" id="">
+                <select name="" id="jahrselect">
                     <option value="2020">2020</option>
-                    <option value="2020">2019</option>
-                    <option value="2020">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
                 </select>
                 <span>!</span>
                 <label for="">zu versteuerndes Einkommen:</label>
-                <input type="text">
+                <input  id="gehalt" type="number">
                 <span>!</span>
                 <label for="">Art der Veranlagung:</label>
                 <div>
@@ -54,13 +54,16 @@
                     <option value="2020">8%</option>
                     <option value="2020">9%</option>
                 </select>
-                <input type="submit">
+                
 
             </form>
-
+            
 
         </section>
-
+        <button class="btnsend" onclick="wahlfunc()" >Berechnen</button>
+        <div>
+            <h1 id="erg" ></h1>
+        </div>
 
 
 
