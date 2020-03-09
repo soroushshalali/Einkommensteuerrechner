@@ -86,11 +86,12 @@ function jahr2019(){
        zue1=Number(zue1);
        zue2=Number(zue2);
         zue=zue1+zue2;
+        zue=zue/2;
    }
    else if(zahl==false){
        zue=document.getElementById("gehalt").value;
        zue=Number(zue);
-       zue=zue/2;
+       
    }
    else{
        zue=document.getElementById("gehalt").value;
@@ -167,5 +168,15 @@ function jahr2018(){
     (zahl==true) ? est=est*2 : "";
     est=est.toFixed(2);
     document.getElementById("erg").innerHTML="Einkommensteuer:" + est;
+}
+function printfunc(){
+    window.print();
+}
+function clearfunc(){
+    document.getElementById("jahrselect").value="2020";
+    document.getElementById("gehalt").value="";
+    document.getElementById("einperson").checked="true";
+    document.getElementById("gehalt2").style.visibility="hidden";
+    document.getElementById("erg").innerHTML="";
 }
 

@@ -19,9 +19,8 @@
             <header>
                 <h2>Einkommensteuerrechner</h2>
                 <div>
-                    <SPAn><a href="#"><i class="fas fa-print"></i></a></SPAn>
-                    <SPAn><a href="#"><i class="fas fa-trash-alt"></i></a></a></SPAn>
-                    <SPAn><a href="#"><i class="fas fa-print"></i></a></a></SPAn>
+                    <SPAn><a onclick="printfunc()" href="#"><i class="fas fa-print"></i></a></SPAn>
+                    <SPAn><a onclick="clearfunc()" href="#"><i class="fas fa-trash-alt"></i></a></a></SPAn>
                 </div>
             </header>
             <form action="">
@@ -38,8 +37,8 @@
                 <span>!</span>
                 <label for="">Art der Veranlagung:</label>
                 <div>
-                    <input onclick="personen()"  id="einperson" type="radio"  name="radio1"  value="ein">
-                    <input onclick="personen()" id="zweipersonen"  type="radio"  name="radio1" value="zwei" >
+                    Einzelveranlagung<input onclick="personen()"  id="einperson" type="radio"  name="radio1"  value="ein">
+                    Zusammenveranlagung<input onclick="personen()" id="zweipersonen"  type="radio"  name="radio1" value="zwei" >
                 </div>
                 <span>!</span>
                 <label for="">zu versteuerndes Einkommen:</label>
