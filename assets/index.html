@@ -4,13 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/7b691a6b0e.js" crossorigin="anonymous"></script>
-  </head>
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
-</head>
+  </head>
 <body>
-    
-
     <main>
         <article>
             <h1>Einkommen­steuer­rechner</h1>
@@ -20,28 +17,28 @@
                 <h2>Einkommensteuerrechner</h2>
                 <div>
                     <SPAn><a onclick="printfunc()" href="#"><i class="fas fa-print"></i></a></SPAn>
-                    <SPAn><a onclick="clearfunc()" href="#"><i class="fas fa-trash-alt"></i></a></a></SPAn>
+                    <SPAn><a onclick="clearfunc()" href="#"><i class="fas fa-trash-alt"></i></a></SPAn>
                 </div>
             </header>
-            <form action="">
+            <form >
                 <span>!</span>
-                <label for="">Jahr:</label>
-                <select name="" id="jahrselect">
+                <label>Jahr:</label>
+                <select id="jahrselect">
                     <option value="2020">2020</option>
                     <option value="2019">2019</option>
                     <option value="2018">2018</option>
                 </select>
                 <span>!</span>
-                <label for="">zu versteuerndes Einkommen:</label>
+                <label>zu versteuerndes Einkommen:</label>
                 <input  id="gehalt" type="number">
                 <span>!</span>
-                <label for="">Art der Veranlagung:</label>
+                <label>Art der Veranlagung:</label>
                 <div>
                     Einzelveranlagung<input onclick="personen()"  id="einperson" type="radio"  name="radio1"  value="ein">
                     Zusammenveranlagung<input onclick="personen()" id="zweipersonen"  type="radio"  name="radio1" value="zwei" >
                 </div>
                 <span>!</span>
-                <label for="">zu versteuerndes Einkommen:</label>
+                <label>zu versteuerndes Einkommen:</label>
                 <input  id="gehalt2" type="number">
 
             </form>
@@ -52,16 +49,7 @@
         <div>
             <h1 id="erg" ></h1>
         </div>
-
-
-
     </main>
-    
-
-
-
-
-
     <script src="js/main.js"></script>
 </body>
 </html>
