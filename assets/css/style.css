@@ -1,0 +1,65 @@
+body{
+    font-size: 16px;
+}
+
+main{
+    padding: 5vh 10%;
+}
+
+article{
+
+}
+article > h1{
+
+}
+article > p{
+
+}
+
+section{
+   
+}
+section > header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(53, 97, 143, 1);
+    color: white;
+    border-radius: 3px;
+    padding: 0 5%;
+}
+section > header >h2{
+
+}
+section > header >div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+} 
+section > header >div > span{
+    margin-left: 20%;
+    font-size: 1.5em;
+    
+} 
+section > header >div > span > a{
+    color: white;
+    
+} 
+section > form{
+    display: grid;
+    grid-template-columns: 10% 20% 70%;
+    grid-template-rows: repeat(6,1fr);
+    grid-row-gap: 10px;
+}
+form > input{
+    width: 30%;
+}
+form > select{
+    width: 30%;
+}
+form > input[type=submit]{
+    display: block;
+    padding: 20px;
+    width: 100px;
+    
+}
