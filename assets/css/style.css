@@ -1,5 +1,6 @@
 body{
     font-size: 16px;
+    font-weight: 500;
 }
 
 main{
@@ -50,6 +51,7 @@ section > form{
     grid-template-columns: 10% 20% 70%;
     grid-template-rows: repeat(6,1fr);
     grid-row-gap: 10px;
+    background-color: rgba(215, 219, 224);
 }
 form > input{
     width: 30%;
@@ -65,4 +67,12 @@ form > input[type=submit]{
 }
 .btnsend{
     padding: 2vh 3%;
+    border-radius:10px ;
+    background-color: rgb(63,155,114);
+    color: white;
+    font-size: 1em;
+}
+
+#gehalt2{
+    visibility: hidden;
 }

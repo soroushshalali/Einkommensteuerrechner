@@ -14,9 +14,6 @@
     <main>
         <article>
             <h1>Einkommen­steuer­rechner</h1>
-            <p>Der Einkommensteuerrechner ermittelt aus dem zu versteu­ern­den Einkommen die tarif­liche Einkommen­steuer für 2020, 2019, 2018, 2017
-                Im Rechner können Sie wählen zwischen der Zusammen­veran­lagung für Ehe­gatten bzw. einge­tragene Lebens­partner (nach Splitting­tabelle) und der Einzel­veranlagung für Allein­stehende (nach Grund­tabelle).
-            </p>
         </article>
         <section>
             <header>
@@ -41,20 +38,12 @@
                 <span>!</span>
                 <label for="">Art der Veranlagung:</label>
                 <div>
-                    <input type="radio"  name="radio1">
-                    <input type="radio"  name="radio1">
+                    <input onclick="personen()"  id="einperson" type="radio"  name="radio1"  value="ein">
+                    <input onclick="personen()" id="zweipersonen"  type="radio"  name="radio1" value="zwei" >
                 </div>
                 <span>!</span>
-                <label for="">Lohnersatzleistungen:</label>
-                <input type="text">
-                <span>!</span>
-                <label for="">Kirchensteuer:</label>
-                <select name="" id="">
-                    <option value="2020">Keine</option>
-                    <option value="2020">8%</option>
-                    <option value="2020">9%</option>
-                </select>
-                
+                <label for="">zu versteuerndes Einkommen:</label>
+                <input  id="gehalt2" type="number">
 
             </form>
             
